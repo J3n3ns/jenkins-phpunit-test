@@ -16,10 +16,10 @@ pipeline {
                 // sh './vendor/bin/phpunit tests'
             }
 		}
-		post {
-			always {
-				junit testResults: 'logs/unitreport.xml'
-			}
+	}
+	post {
+		always {
+			junit testResults: 'logs/unitreport.xml'
 		}
 	}
 }
