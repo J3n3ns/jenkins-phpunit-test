@@ -10,7 +10,7 @@ pipeline {
 				sh 'composer install'
 			}
 		}
-		stage('Test') {
+		stage('Tests') {
 			steps {
                 sh './vendor/bin/phpunit tests'
             }
