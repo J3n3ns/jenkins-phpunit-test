@@ -5,7 +5,7 @@ pipeline {
 		}
 	}
 	stages {
-		stage('Build') {
+		stage('Builds') {
 			steps {
 				sh 'composer install'
 			}
